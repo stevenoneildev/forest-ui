@@ -16,25 +16,25 @@ export default {
         ),
     ],
     argTypes: {
-        name: {
+        iconName: {
             control: {
                 type: 'select',
                 options: Object.keys(IconPaths),
             },
         },
-        size: {
+        iconSize: {
             control: {
                 type: 'select',
                 options: ['xxSmall', 'xSmall', 'small', 'medium', 'large', 'xLarge', 'xxLarge'],
             },
         },
-        color: {
+        iconColor: {
             control: {
                 type: 'select',
                 options: ['primary', 'secondary', 'tertiary'],
             },
         },
-        style: { control: false }
+        iconStyle: { control: false }
     },
 } as Meta;
 
@@ -42,7 +42,7 @@ const Template: StoryFn<IconProps> = (args) => <Icon {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-    name: 'plus',
-    size: 'large',
-    color: 'primary',
+    iconName: 'plus',
+    iconSize: 'large',
+    iconColor: 'primary',
 };

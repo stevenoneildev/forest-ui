@@ -3,22 +3,22 @@ import { IconPaths } from './IconURIs';
 import { StyledIcon } from './styles';
 
 export interface IconProps extends React.SVGProps<SVGSVGElement> {
-    name: keyof typeof IconPaths;
-    size: string;
-    color: string;
-    style?: React.CSSProperties;
+    iconName: keyof typeof IconPaths;
+    iconSize: string;
+    iconColor: string;
+    iconStyle?: React.CSSProperties;
 }
 
-const Icon: React.FC<IconProps> = ({ name, size = 'medium', color = 'primary', style }) => {
-    const pathData = IconPaths[name];
+const Icon: React.FC<IconProps> = ({ iconName, iconSize = 'medium', iconColor = 'primary', iconStyle }) => {
+    const pathData = IconPaths[iconName];
     return (
         <StyledIcon
-            size={size}
-            color={color}
+            iconSize={iconSize}
+            iconColor={iconColor}
             viewBox="0 0 512 512"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            style={style}
+            style={iconStyle}
         >
             <path d={pathData} />
         </StyledIcon>

@@ -55,11 +55,11 @@ function App() {
           {isDarkTheme ? "Switch to light mode" : "Switch to dark mode"}
         </Button>
         <div style={{ display: "flex", flexDirection: "column", gap: "1rem", padding: "1rem" }}>
-        <Icon name={isDarkTheme ? "moon" : "sun"} size="large" color="primary" style={{ position: "fixed", top: "1rem", left: "auto", right: "1rem", bottom: "auto" }} />
+        <Icon iconName={isDarkTheme ? "moon" : "sun"} iconSize="large" iconColor="primary" iconStyle={{ position: "fixed", top: "1rem", left: "auto", right: "1rem", bottom: "auto" }} />
           <div style={{ display: "flex", flexDirection: "row", gap: "1rem" }}>
-            <Icon name="plus" size="small" color="primary" />
-            <Icon name="plus" size="medium" color="primary" />
-            <Icon name="plus" size="large" color="primary" />
+            <Icon iconName="plus" iconSize="small" iconColor="primary" />
+            <Icon iconName="plus" iconSize="medium" iconColor="primary" />
+            <Icon iconName="plus" iconSize="large" iconColor="primary" />
           </div>
           <div style={{ display: "flex", flexDirection: "row", gap: "1rem" }}>
             <Button variant="primary" size="small" onClick={() => console.log("Button clicked")}>Primary</Button>

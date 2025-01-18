@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-export const StyledIcon = styled.svg<{ size: string; color: string }>`
-    width: ${({ theme, size }) => {
-        switch (size) {
+export const StyledIcon = styled.svg<{ iconSize: string; iconColor: string }>`
+    width: ${({ theme, iconSize }) => {
+        switch (iconSize) {
             case "xxSmall":
                 return theme.size.sizeXXS;
             case "xSmall":
@@ -21,8 +21,8 @@ export const StyledIcon = styled.svg<{ size: string; color: string }>`
                 return theme.size.large;
         }
     }};
-    height: ${({ theme, size }) => {
-        switch (size) {
+    height: ${({ theme, iconSize }) => {
+        switch (iconSize) {
             case "xxSmall":
                 return theme.size.sizeXXS;
             case "xSmall":
@@ -41,5 +41,5 @@ export const StyledIcon = styled.svg<{ size: string; color: string }>`
                 return theme.size.large;
         }
     }};
-    fill: ${({ theme, color }) => theme.colors.foreground[color]};    
+    fill: ${({ theme, iconColor }) => theme.colors.foreground[iconColor]};    
 `;

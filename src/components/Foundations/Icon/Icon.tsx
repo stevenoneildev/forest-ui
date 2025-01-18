@@ -2,7 +2,7 @@ import React from 'react';
 import { IconPaths } from './IconURIs';
 import { StyledIcon } from './styles';
 
-interface IconProps extends React.SVGProps<SVGSVGElement> {
+export interface IconProps extends React.SVGProps<SVGSVGElement> {
     name: keyof typeof IconPaths;
     size: string;
     color: string;

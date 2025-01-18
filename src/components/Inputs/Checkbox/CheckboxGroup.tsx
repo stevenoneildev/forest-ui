@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import Checkbox from './Checkbox';
 import { StyledCheckboxGroup } from './styles';
 
-interface CheckboxOption {
+export interface CheckboxOption {
     label: string;
     value: string;
 }
 
-interface CheckboxGroupProps {
+export interface CheckboxGroupProps {
     options: CheckboxOption[];
     variant: string;
     onChange: (selectedValues: string[]) => void;

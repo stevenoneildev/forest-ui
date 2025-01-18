@@ -50,6 +50,7 @@ function App() {
     <div className="App">
       <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
         <GlobalStyle />
+        <>This is a test</>
         <Button onClick={toggleTheme} style={{ position: "fixed", top: "auto", left: "auto", right: "1rem", bottom: "1rem" }}>
           {isDarkTheme ? "Switch to light mode" : "Switch to dark mode"}
         </Button>

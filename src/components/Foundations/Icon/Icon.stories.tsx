@@ -19,7 +19,7 @@ export default {
         name: {
             control: {
                 type: 'select',
-                options: typeof IconPaths,
+                options: Object.keys(IconPaths),
             },
         },
         size: {
@@ -34,6 +34,7 @@ export default {
                 options: ['primary', 'secondary', 'tertiary'],
             },
         },
+        style: { control: false }
     },
 } as Meta;
 

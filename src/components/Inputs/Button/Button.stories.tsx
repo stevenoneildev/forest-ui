@@ -2,7 +2,7 @@ import React from 'react';
 import { Meta, StoryFn } from '@storybook/react';
 import { ThemeProvider } from 'styled-components';
 import Button, { ButtonProps } from './Button';
-import { lightTheme, Theme } from '../../../tokens/theme';
+import { lightTheme } from '../../../tokens/theme';
 
 export default {
   title: 'Example/Button',

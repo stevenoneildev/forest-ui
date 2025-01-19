@@ -10,6 +10,7 @@ import CheckboxGroup from './components/Inputs/Checkbox/CheckboxGroup';
 import RadioButtonGroup from './components/Inputs/RadioButton/RadioButtonGroup';
 import CheckboxContained from './components/Inputs/Checkbox/CheckboxContained';
 import RadioButtonContained from './components/Inputs/RadioButton/RadioButtonContained';
+import TextField from './components/Inputs/TextField/TextField';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
   const [selectedRadio, setSelectedRadio] = useState<string | null>(null);
   const [selectedCheckboxes, setSelectedCheckboxes] = useState<string[]>([]);
   const [isChecked, setIsChecked] = useState(false);
+  const [textFieldValue, setTextFieldValue] = useState("");
 
   useEffect(() => {
     console.log('Selected Radio:', selectedRadio);
@@ -124,7 +126,8 @@ function App() {
                 label="Option 1"
                 checked={selectedRadio === "radio1"}
                 onChange={(checked) => handleRadioButtonGroupChange("radio1")}
-          />          
+          />
+          <TextField label="Label" value={textFieldValue} onChange={(e) => setTextFieldValue(e.target.value)} placeholder="Placeholder" type="text" />          
         </div>        
       </ThemeProvider>
     </div>

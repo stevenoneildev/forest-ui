@@ -30,6 +30,10 @@ export interface Theme {
             neutralHover: string;
             neutralActive: string;
             neutralDisabled: string;
+            primary: string;
+            primaryHover: string;
+            primaryActive: string;
+            primaryDisabled: string;            
         }
     },
     typography: {
@@ -116,6 +120,10 @@ export const lightTheme: Theme = {
             neutralHover: base.colors.grey300,
             neutralActive: base.colors.grey400,
             neutralDisabled: base.colors.grey100,
+            primary: base.colors.grey1200,
+            primaryHover: base.colors.grey1100,
+            primaryActive: base.colors.grey1000,
+            primaryDisabled: base.colors.grey100,          
         },        
     },
     typography: {
@@ -202,6 +210,10 @@ export const darkTheme: Theme = {
             neutralHover: base.colors.grey800,
             neutralActive: base.colors.grey700,
             neutralDisabled: base.colors.grey1000,
+            primary: base.colors.grey50,
+            primaryHover: base.colors.grey100,
+            primaryActive: base.colors.grey200,
+            primaryDisabled: base.colors.grey1000,          
         },      
     },
     typography: {

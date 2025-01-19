@@ -57,6 +57,111 @@ export const StyledLabel = styled.label<{ variant: string }>`
     }};
 `
 
+export const StyledRadioButtonContainedLabel = styled.label<{ variant: string }>`
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    cursor: pointer;
+    border-radius: ${({ theme }) => theme.borderRadius.borderRadiusM};
+    border: 1px solid ${({ theme }) => theme.colors.border.neutral};
+    padding-left: ${({ theme, variant }) => {
+        switch (variant) {
+            case "medium":
+                return theme.spacing.spacingS;
+            case "small":
+                return theme.spacing.spacingXS;           
+            default:
+                return theme.spacing.spacingS;
+        }
+    }};
+    padding-right: ${({ theme, variant }) => {
+        switch (variant) {
+            case "medium":
+                return theme.spacing.spacingS;
+            case "small":
+                return theme.spacing.spacingXS;           
+            default:
+                return theme.spacing.spacingS;
+        }
+    }};
+    padding-top: ${({ theme, variant }) => {
+        switch (variant) {
+            case "medium":
+                return theme.spacing.spacingS;
+            case "small":
+                return theme.spacing.spacingXS;           
+            default:
+                return theme.spacing.spacingS;
+        }
+    }};
+    padding-bottom: ${({ theme, variant }) => {
+        switch (variant) {
+            case "medium":
+                return theme.spacing.spacingS;
+            case "small":
+                return theme.spacing.spacingXS;           
+            default:
+                return theme.spacing.spacingS;
+        }
+    }};    
+    gap: ${({ theme, variant }) => {
+        switch (variant) {
+            case "medium":
+                return theme.spacing.spacingS;
+            case "small":
+                return theme.spacing.spacingXS;           
+            default:
+                return theme.spacing.spacingS;
+        }
+    }};
+    font-family: ${({ theme, variant }) => {
+        switch (variant) {
+            case "medium":
+                return theme.typography.bodyM.fontFamily;
+            case "small":
+                return theme.typography.bodyS.fontFamily;             
+            default:
+                return theme.typography.bodyM.fontFamily;
+        }
+    }};
+    font-size: ${({ theme, variant }) => {
+        switch (variant) {
+            case "medium":
+                return theme.typography.bodyM.fontSize;
+            case "small":
+                return theme.typography.bodyS.fontSize;             
+            default:
+                return theme.typography.bodyM.fontSize;
+        }
+    }};
+    font-weight: ${({ theme, variant }) => {
+        switch (variant) {
+            case "medium":
+                return theme.typography.bodyM.fontWeight;
+            case "small":
+                return theme.typography.bodyS.fontWeight;             
+            default:
+                return theme.typography.bodyM.fontWeight;
+        }
+    }};
+    line-height: ${({ theme, variant }) => {
+        switch (variant) {
+            case "medium":
+                return theme.typography.bodyM.lineHeight;
+            case "small":
+                return theme.typography.bodyS.lineHeight;             
+            default:
+                return theme.typography.bodyM.lineHeight;
+        }
+    }};
+    &:hover {
+        border: 1px solid ${({ theme }) => theme.colors.border.neutralHover};
+    };
+    &:active {
+        border: 1px solid ${({ theme }) => theme.colors.border.neutralActive};
+    };    
+`
+
 export const StyledRadioButton = styled.input<{ variant: string }>`
     appearance: none;
     -webkit-appearance: none;

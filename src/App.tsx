@@ -9,6 +9,7 @@ import Typography from './components/Foundations/Typography/Typography';
 import CheckboxGroup from './components/Inputs/Checkbox/CheckboxGroup';
 import RadioButtonGroup from './components/Inputs/RadioButton/RadioButtonGroup';
 import CheckboxContained from './components/Inputs/Checkbox/CheckboxContained';
+import RadioButtonContained from './components/Inputs/RadioButton/RadioButtonContained';
 
 function App() {
 
@@ -112,6 +113,18 @@ function App() {
                 checked={isChecked}
                 onChange={(checked) => setIsChecked(checked)}
           />
+          <RadioButtonContained
+                variant="medium"
+                label="Option 1"
+                checked={selectedRadio === "radio1"}
+                onChange={(checked) => handleRadioButtonGroupChange("radio1")}
+          />
+          <RadioButtonContained
+                variant="small"
+                label="Option 1"
+                checked={selectedRadio === "radio1"}
+                onChange={(checked) => handleRadioButtonGroupChange("radio1")}
+          />          
         </div>        
       </ThemeProvider>
     </div>

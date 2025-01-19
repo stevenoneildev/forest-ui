@@ -127,7 +127,7 @@ function App() {
                 checked={selectedRadio === "radio1"}
                 onChange={(checked) => handleRadioButtonGroupChange("radio1")}
           />
-          <TextField label="Label" value={textFieldValue} onChange={(e) => setTextFieldValue(e.target.value)} placeholder="Placeholder" type="text" />          
+          <TextField hasLabel label="Label" value={textFieldValue} onChange={(e) => setTextFieldValue(e.target.value)} placeholder="Placeholder" type="text" hasHelperText helperText='Helper text goes here' />          
         </div>        
       </ThemeProvider>
     </div>

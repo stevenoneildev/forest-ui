@@ -1,20 +1,20 @@
 import React, { useState } from 'react';
-import RadioButton from './RadioButton';
+import RadioButtonContained from './RadioButtonContained';
 import { StyledRadioButtonGroup } from './styles';
 
-export interface RadioButtonOption {
+interface RadioButtonOption {
     label: string;
     value: string;
 }
 
-export interface RadioButtonGroupProps {
+interface RadioButtonGroupProps {
     options: RadioButtonOption[];
     name: string;
     variant: string;
     onChange: (value: string) => void;
 }
 
-const RadioButtonGroup: React.FC<RadioButtonGroupProps> = ({ options, name, variant, onChange }) => {
+const RadioButtonContainedGroup: React.FC<RadioButtonGroupProps> = ({ options, name, variant, onChange }) => {
     const [selectedValue, setSelectedValue] = useState<string | null>(null);
 
     const handleRadioButtonChange = (checked: boolean, value: string) => {
@@ -27,7 +27,7 @@ const RadioButtonGroup: React.FC<RadioButtonGroupProps> = ({ options, name, vari
     return (
         <StyledRadioButtonGroup variant={variant}>
             {options.map((option) => (
-                <RadioButton
+                <RadioButtonContained
                     key={option.value}
                     label={option.label}
                     checked={selectedValue === option.value}
@@ -39,4 +39,4 @@ const RadioButtonGroup: React.FC<RadioButtonGroupProps> = ({ options, name, vari
     );
 };
 
-export default RadioButtonGroup;
+export default RadioButtonContainedGroup;

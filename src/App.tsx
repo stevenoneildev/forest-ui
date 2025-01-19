@@ -8,6 +8,7 @@ import Button from './components/Inputs/Button/Button';
 import Typography from './components/Foundations/Typography/Typography';
 import CheckboxGroup from './components/Inputs/Checkbox/CheckboxGroup';
 import RadioButtonGroup from './components/Inputs/RadioButton/RadioButtonGroup';
+import CheckboxContained from './components/Inputs/Checkbox/CheckboxContained';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
 
   const [selectedRadio, setSelectedRadio] = useState<string | null>(null);
   const [selectedCheckboxes, setSelectedCheckboxes] = useState<string[]>([]);
+  const [isChecked, setIsChecked] = useState(false);
 
   useEffect(() => {
     console.log('Selected Radio:', selectedRadio);
@@ -97,6 +99,18 @@ function App() {
             name="exampleRadioGroup"
             variant="medium"
             onChange={handleRadioButtonGroupChange}
+          />
+          <CheckboxContained
+                variant="medium"
+                label="Accept Terms and Conditions"
+                checked={isChecked}
+                onChange={(checked) => setIsChecked(checked)}
+          />
+          <CheckboxContained
+                variant="small"
+                label="Accept Terms and Conditions"
+                checked={isChecked}
+                onChange={(checked) => setIsChecked(checked)}
           />
         </div>        
       </ThemeProvider>

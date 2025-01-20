@@ -1,0 +1,38 @@
+import React from 'react';
+import { Meta, StoryFn } from '@storybook/react';
+import { ThemeProvider } from 'styled-components';
+import Tag, { TagProps } from './Tag';
+import { lightTheme } from '../../../tokens/theme';
+
+export default {
+    title: 'Status/Tag',
+    component: Tag,
+    decorators: [
+      (Story) => (
+        <ThemeProvider theme={lightTheme}>
+          <Story />
+        </ThemeProvider>
+      ),
+    ],
+    argTypes: {
+        variant: {
+            control: {
+                type: 'select',
+                options: ['small', 'medium'],
+            },
+        },
+        children: {
+            control: {
+                type: 'text',
+            },
+        },
+    }
+} as Meta;
+
+const Template: StoryFn<TagProps> = (args) => <Tag {...args} />;
+
+export const Default = Template.bind({});
+Default.args = {
+  variant: 'medium',
+  children: 'Label'
+};

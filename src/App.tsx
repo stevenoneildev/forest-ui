@@ -4,13 +4,14 @@ import { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme } from './tokens/theme';
 import GlobalStyle from './tokens/GlobalStyle';
 import Icon from './components/Foundations/Icon/Icon';
-import Button from './components/Inputs/Button/Button';
+import Button from './components/Actions/Button/Button';
 import Typography from './components/Foundations/Typography/Typography';
 import CheckboxGroup from './components/Inputs/Checkbox/CheckboxGroup';
 import RadioButtonGroup from './components/Inputs/RadioButton/RadioButtonGroup';
 import CheckboxContained from './components/Inputs/Checkbox/CheckboxContained';
 import RadioButtonContained from './components/Inputs/RadioButton/RadioButtonContained';
 import TextField from './components/Inputs/TextField/TextField';
+import Tag from './components/Status/Tag/Tag';
 
 function App() {
 
@@ -128,6 +129,8 @@ function App() {
                 onChange={(checked) => handleRadioButtonGroupChange("radio1")}
           />
           <TextField hasLabel label="Label" value={textFieldValue} onChange={(e) => setTextFieldValue(e.target.value)} placeholder="Placeholder" type="text" hasHelperText helperText='Helper text goes here' />          
+          <Tag variant="small">Label</Tag>
+          <Tag variant="medium">Label</Tag>
         </div>        
       </ThemeProvider>
     </div>

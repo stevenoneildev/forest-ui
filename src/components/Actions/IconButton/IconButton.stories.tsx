@@ -5,7 +5,7 @@ import IconButton, { IconButtonProps } from "./IconButton";
 import { lightTheme } from "../../../tokens/theme";
 
 export default {
-    title: "Inputs/IconButton",
+    title: "Actions/IconButton",
     component: IconButton,
     decorators: [
         (Story) => (

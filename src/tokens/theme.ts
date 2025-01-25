@@ -9,6 +9,9 @@ export interface Theme {
             onPrimary: string;
             onPrimaryFaded: string;
             onPrimaryDisabled: string;
+            accent: string;
+            accentHover: string;
+            accentActive: string;
         },
         background: {
             page: string;
@@ -24,6 +27,10 @@ export interface Theme {
             baseHover: string;
             baseActive: string;
             baseDisabled: string;
+            accent: string;
+            accentHover: string;
+            accentActive: string;
+            accentFaded: string;
         },
         border: {
             neutral: string;
@@ -33,7 +40,11 @@ export interface Theme {
             primary: string;
             primaryHover: string;
             primaryActive: string;
-            primaryDisabled: string;            
+            primaryDisabled: string; 
+            accent: string;
+            accentHover: string;
+            accentActive: string;
+            accentFaded: string;
         }
     },
     typography: {
@@ -99,6 +110,9 @@ export const lightTheme: Theme = {
             onPrimary: base.colors.grey50,
             onPrimaryFaded: base.colors.grey400,
             onPrimaryDisabled: base.colors.grey600,
+            accent: base.colors.blue700,
+            accentHover: base.colors.blue600,
+            accentActive: base.colors.blue500,
         },
         background: {
             page: base.colors.grey0,
@@ -114,6 +128,10 @@ export const lightTheme: Theme = {
             baseHover: base.colors.grey50,
             baseActive: base.colors.grey100,
             baseDisabled: base.colors.grey0,
+            accent: base.colors.blue700,
+            accentHover: base.colors.blue600,
+            accentActive: base.colors.blue500,
+            accentFaded: base.colors.blue100,
         },
         border: {
             neutral: base.colors.grey200,
@@ -123,7 +141,11 @@ export const lightTheme: Theme = {
             primary: base.colors.grey1200,
             primaryHover: base.colors.grey1100,
             primaryActive: base.colors.grey1000,
-            primaryDisabled: base.colors.grey100,          
+            primaryDisabled: base.colors.grey100,  
+            accent: base.colors.blue700,
+            accentHover: base.colors.blue600,
+            accentActive: base.colors.blue500,
+            accentFaded: base.colors.blue200,
         },        
     },
     typography: {
@@ -189,6 +211,9 @@ export const darkTheme: Theme = {
             onPrimary: base.colors.grey1200,
             onPrimaryFaded: base.colors.grey600,
             onPrimaryDisabled: base.colors.grey400,
+            accent: base.colors.blue700,
+            accentHover: base.colors.blue600,
+            accentActive: base.colors.blue500,
         },
         background: {
             page: base.colors.grey1200,
@@ -204,6 +229,10 @@ export const darkTheme: Theme = {
             baseHover: base.colors.grey1100,
             baseActive: base.colors.grey1000,
             baseDisabled: base.colors.grey1200,
+            accent: base.colors.blue700,
+            accentHover: base.colors.blue600,
+            accentActive: base.colors.blue500,
+            accentFaded: base.colors.blue200,
         },
         border: {
             neutral: base.colors.grey900,
@@ -213,7 +242,11 @@ export const darkTheme: Theme = {
             primary: base.colors.grey50,
             primaryHover: base.colors.grey100,
             primaryActive: base.colors.grey200,
-            primaryDisabled: base.colors.grey1000,          
+            primaryDisabled: base.colors.grey1000,
+            accent: base.colors.blue700,
+            accentHover: base.colors.blue600,
+            accentActive: base.colors.blue500,
+            accentFaded: base.colors.blue200,
         },      
     },
     typography: {

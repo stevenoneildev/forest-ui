@@ -12,6 +12,7 @@ import CheckboxContained from './components/Inputs/Checkbox/CheckboxContained';
 import RadioButtonContained from './components/Inputs/RadioButton/RadioButtonContained';
 import TextField from './components/Inputs/TextField/TextField';
 import Tag from './components/Status/Tag/Tag';
+import LinkButton from './components/Actions/LinkButton/LinkButton';
 
 function App() {
 
@@ -131,6 +132,8 @@ function App() {
           <TextField hasLabel label="Label" value={textFieldValue} onChange={(e) => setTextFieldValue(e.target.value)} placeholder="Placeholder" type="text" hasHelperText helperText='Helper text goes here' />          
           <Tag variant="small">Label</Tag>
           <Tag variant="medium">Label</Tag>
+          <LinkButton buttonSize="medium" buttonVariant="accent" onClick={() => console.log("Link button clicked")}>Link button</LinkButton>
+          <LinkButton buttonSize="medium" buttonVariant="primary" onClick={() => console.log("Link button clicked")}>Link button</LinkButton>
         </div>        
       </ThemeProvider>
     </div>

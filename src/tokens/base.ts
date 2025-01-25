@@ -1,5 +1,6 @@
 export const base = {
     colors: {
+        // Grey
         grey1200: '#0B0A0A',
         grey1100: '#201D1C',
         grey1000: '#342F2F',
@@ -14,6 +15,20 @@ export const base = {
         grey100: '#E4E1DF',
         grey50: '#F6F5F4',
         grey0: '#FFFFFF',
+        // Blue
+        blue1200: '#001429',
+        blue1100: '#002952',
+        blue1000: '#003D7A',
+        blue900: '#0052A3',
+        blue800: '#0066CC',
+        blue700: '#0080FF',
+        blue600: '#1A8FFF',
+        blue500: '#3D9FFF',
+        blue400: '#66B3FF',
+        blue300: '#8CC6FF',
+        blue200: '#B3D9FF',
+        blue100: '#D9ECFF',
+        blue50: '#EBF5FF',
     },
     size: {
         size0: '0rem',

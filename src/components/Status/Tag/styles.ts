@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledTag = styled.div<{ variant: string; }>`
+export const StyledTag = styled.div<{ variant: string; color: string; }>`
     display: inline-flex;
     flex-shrink: 0;
     flex-grow: 0;    
@@ -81,6 +81,24 @@ export const StyledTag = styled.div<{ variant: string; }>`
         }
     }};        
     border-radius: ${({ theme }) => theme.borderRadius.borderRadiusM};
-    background-color: ${({ theme }) => theme.colors.background.primaryFaded};
-    color: ${({ theme }) => theme.colors.foreground.primaryFaded};
+    background-color: ${({ theme, color }) => {
+        switch (color) {
+            case "neutral":
+                return theme.colors.background.primaryFaded;
+            case "accent":
+                return theme.colors.background.accentFaded;
+            default:
+                return theme.colors.background.primaryFaded;
+        }
+    }};
+    color: ${({ theme, color }) => {
+        switch (color) {
+            case "neutral":
+                return theme.colors.foreground.primaryFaded;
+            case "accent":
+                return theme.colors.foreground.accent;
+            default:
+                return theme.colors.foreground.primaryFaded;
+        }
+    }};
 `

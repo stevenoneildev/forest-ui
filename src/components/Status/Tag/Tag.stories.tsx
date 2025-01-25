@@ -21,6 +21,12 @@ export default {
                 options: ['small', 'medium'],
             },
         },
+        color: {
+            control: {
+                type: 'select',
+                options: ['neutral', 'accent'],
+            },
+        },
         children: {
             control: {
                 type: 'text',
@@ -34,5 +40,6 @@ const Template: StoryFn<TagProps> = (args) => <Tag {...args} />;
 export const Default = Template.bind({});
 Default.args = {
   variant: 'medium',
+  color: 'neutral',
   children: 'Label'
 };

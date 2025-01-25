@@ -11,6 +11,7 @@ import RadioButtonGroup from './components/Inputs/RadioButton/RadioButtonGroup';
 import CheckboxContained from './components/Inputs/Checkbox/CheckboxContained';
 import RadioButtonContained from './components/Inputs/RadioButton/RadioButtonContained';
 import TextField from './components/Inputs/TextField/TextField';
+import IconButton from './components/Inputs/IconButton/IconButton';
 
 function App() {
 
@@ -128,6 +129,28 @@ function App() {
                 onChange={(checked) => handleRadioButtonGroupChange("radio1")}
           />
           <TextField hasLabel label="Label" value={textFieldValue} onChange={(e) => setTextFieldValue(e.target.value)} placeholder="Placeholder" type="text" hasHelperText helperText='Helper text goes here' />          
+          <div>
+            <div>
+              <IconButton iconName="plus" buttonSize="large" buttonVariant="primary" />
+              <IconButton iconName="plus" buttonSize="medium" buttonVariant="primary" />
+              <IconButton iconName="plus" buttonSize="small" buttonVariant="primary" />
+            </div>
+            <div>
+              <IconButton iconName="plus" buttonSize="large" buttonVariant="secondary" />
+              <IconButton iconName="plus" buttonSize="medium" buttonVariant="secondary" />
+              <IconButton iconName="plus" buttonSize="small" buttonVariant="secondary" />
+            </div>
+            <div>
+              <IconButton iconName="plus" buttonSize="large" buttonVariant="tertiary" />
+              <IconButton iconName="plus" buttonSize="medium" buttonVariant="tertiary" />
+              <IconButton iconName="plus" buttonSize="small" buttonVariant="tertiary" />
+            </div>
+            <div>
+              <IconButton iconName="plus" buttonSize="large" buttonVariant="primary" disabled />
+              <IconButton iconName="plus" buttonSize="medium" buttonVariant="secondary" disabled />
+              <IconButton iconName="plus" buttonSize="small" buttonVariant="tertiary" disabled />
+            </div>
+          </div>
         </div>        
       </ThemeProvider>
     </div>

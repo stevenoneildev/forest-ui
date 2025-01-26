@@ -3,6 +3,16 @@ import styled from "styled-components";
 export const StyledTypography = styled.p<{ variant: string, align: string }>`
     font-family: ${({ theme, variant }) => {
         switch (variant) {
+            case "headingXS":
+                return theme.typography.headingXS.fontFamily;
+            case "headingS":
+                return theme.typography.headingS.fontFamily;
+            case "headingM":
+                return theme.typography.headingM.fontFamily;
+            case "headingL":
+                return theme.typography.headingL.fontFamily;
+            case "headingXL":
+                return theme.typography.headingXL.fontFamily;
             case "bodyM":
                 return theme.typography.bodyM.fontFamily;
             case "bodyMBold":
@@ -17,6 +27,16 @@ export const StyledTypography = styled.p<{ variant: string, align: string }>`
     }};
     font-size: ${({ theme, variant }) => {
         switch (variant) {
+            case "headingXS":
+                return theme.typography.headingXS.fontSize;
+            case "headingS":
+                return theme.typography.headingS.fontSize;
+            case "headingM":
+                return theme.typography.headingM.fontSize;
+            case "headingL":
+                return theme.typography.headingL.fontSize;
+            case "headingXL":
+                return theme.typography.headingXL.fontSize;
             case "bodyM":
                 return theme.typography.bodyM.fontSize;
             case "bodyMBold":
@@ -31,6 +51,16 @@ export const StyledTypography = styled.p<{ variant: string, align: string }>`
     }}; 
     font-weight: ${({ theme, variant }) => {
         switch (variant) {
+            case "headingXS":
+                return theme.typography.headingXS.fontWeight;
+            case "headingS":
+                return theme.typography.headingS.fontWeight;
+            case "headingM":
+                return theme.typography.headingM.fontWeight;
+            case "headingL":
+                return theme.typography.headingL.fontWeight;
+            case "headingXL":
+                return theme.typography.headingXL.fontWeight;
             case "bodyM":
                 return theme.typography.bodyM.fontWeight;
             case "bodyMBold":
@@ -45,6 +75,16 @@ export const StyledTypography = styled.p<{ variant: string, align: string }>`
     }};
     line-height: ${({ theme, variant }) => {
         switch (variant) {
+            case "headingXS":
+                return theme.typography.headingXS.lineHeight;
+            case "headingS":
+                return theme.typography.headingS.lineHeight;
+            case "headingM":
+                return theme.typography.headingM.lineHeight;
+            case "headingL":
+                return theme.typography.headingL.lineHeight;
+            case "headingXL":
+                return theme.typography.headingXL.lineHeight;
             case "bodyM":
                 return theme.typography.bodyM.lineHeight;
             case "bodyMBold":

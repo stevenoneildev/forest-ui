@@ -64,6 +64,7 @@ export const StyledCheckboxContainedLabel = styled.label<{ variant: string }>`
     cursor: pointer;
     border-radius: ${({ theme }) => theme.borderRadius.borderRadiusM};
     border: 1px solid ${({ theme }) => theme.colors.border.neutral};
+    background-color: ${({ theme }) => theme.colors.background.base};
     padding-left: ${({ theme, variant }) => {
         switch (variant) {
             case "medium":
@@ -156,9 +157,11 @@ export const StyledCheckboxContainedLabel = styled.label<{ variant: string }>`
     }};
     &:hover {
         border: 1px solid ${({ theme }) => theme.colors.border.neutralHover};
+        background-color: ${({ theme }) => theme.colors.background.baseHover};
     };
     &:active {
         border: 1px solid ${({ theme }) => theme.colors.border.neutralActive};
+        background-color: ${({ theme }) => theme.colors.background.baseActive};
     };
 `;
 
@@ -190,12 +193,13 @@ export const StyledCheckbox = styled.input<{ variant: string }>`
                 return theme.size.sizeM;
         }
     }};
+    background-color: ${({ theme }) => theme.colors.background.base};
     &:hover {
         border: 1px solid ${({ theme }) => theme.colors.border.neutralHover};
-    }
+        background-color: ${({ theme }) => theme.colors.background.baseHover};
     &:active {
         border: 1px solid ${({ theme }) => theme.colors.border.neutralActive};
-    }
+        background-color: ${({ theme }) => theme.colors.background.baseActive};
     &:checked {
         background-color: ${({ theme }) => theme.colors.background.primary};
         border: none;

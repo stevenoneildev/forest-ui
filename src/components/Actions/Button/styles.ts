@@ -121,7 +121,18 @@ export const StyledButton = styled.button<{ variant: string; size: string }>`
                 return "none";
         }
     }};    
-    border-radius: ${({ theme }) => theme.borderRadius.borderRadiusM};    
+    border-radius: ${({ theme, size }) => {
+        switch (size) {
+            case "small":
+                return theme.borderRadius.borderRadiusS;
+            case "medium":
+                return theme.borderRadius.borderRadiusM;
+            case "large":
+                return theme.borderRadius.borderRadiusM;
+            default:
+                return theme.borderRadius.borderRadiusM;
+        }
+    }};    
     box-sizing: border-box;
     cursor: pointer;
     transition: all 0.2s ease-in-out;

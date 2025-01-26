@@ -72,6 +72,12 @@ export const base = {
         lineHeight: {
             bodyS: '1.25rem', // 20px
             bodyM: '1.5rem', // 24px
+            bodyL: '1.75rem', // 28px
+            headingXS: '1.75rem', // 28px
+            headingS: '2rem', // 32px
+            headingM: '2.5rem', // 40px
+            headingL: '3.5rem', // 56px
+            headingXL: '4.5rem', // 72px
         },
     }
 };

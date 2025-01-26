@@ -36,7 +36,7 @@ export const StyledIconButton = styled.button<{ buttonSize: string; buttonVarian
     border-radius: ${({ theme, buttonSize }) => {
         switch (buttonSize) {
             case "large":
-                return theme.borderRadius.borderRadiusS;
+                return theme.borderRadius.borderRadiusM;
             case "medium":
                 return theme.borderRadius.borderRadiusS;
             case "small":

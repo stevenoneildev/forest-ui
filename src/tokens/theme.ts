@@ -49,6 +49,36 @@ export interface Theme {
         }
     },
     typography: {
+        headingXS: {
+            fontFamily: string;
+            fontWeight: number;
+            fontSize: string;
+            lineHeight: string;
+        },
+        headingS: {
+            fontFamily: string;
+            fontWeight: number;
+            fontSize: string;
+            lineHeight: string;
+        },
+        headingM: {
+            fontFamily: string;
+            fontWeight: number;
+            fontSize: string;
+            lineHeight: string;
+        },
+        headingL: {
+            fontFamily: string;
+            fontWeight: number;
+            fontSize: string;
+            lineHeight: string;
+        },
+        headingXL: {
+            fontFamily: string;
+            fontWeight: number;
+            fontSize: string;
+            lineHeight: string;
+        },
         bodyM: {
             fontFamily: string;
             fontWeight: number;
@@ -151,6 +181,36 @@ export const lightTheme: Theme = {
         },        
     },
     typography: {
+        headingXS: {
+            fontFamily: base.typography.fontFamily,
+            fontWeight: base.typography.fontWeight.bold,
+            fontSize: base.typography.fontSize.headingXS,
+            lineHeight: base.typography.lineHeight.headingXS,
+        },
+        headingS: {
+            fontFamily: base.typography.fontFamily,
+            fontWeight: base.typography.fontWeight.bold,
+            fontSize: base.typography.fontSize.headingS,
+            lineHeight: base.typography.lineHeight.headingS,
+        },
+        headingM: {
+            fontFamily: base.typography.fontFamily,
+            fontWeight: base.typography.fontWeight.bold,
+            fontSize: base.typography.fontSize.headingM,
+            lineHeight: base.typography.lineHeight.headingM,
+        },
+        headingL: {
+            fontFamily: base.typography.fontFamily,
+            fontWeight: base.typography.fontWeight.bold,
+            fontSize: base.typography.fontSize.headingL,
+            lineHeight: base.typography.lineHeight.headingL,
+        },
+        headingXL: {
+            fontFamily: base.typography.fontFamily,
+            fontWeight: base.typography.fontWeight.bold,
+            fontSize: base.typography.fontSize.headingXL,
+            lineHeight: base.typography.lineHeight.headingXL,
+        },
         bodyM: {
             fontFamily: base.typography.fontFamily,
             fontWeight: base.typography.fontWeight.regular,
@@ -252,56 +312,8 @@ export const darkTheme: Theme = {
             accentFaded: base.colors.blue200,
         },      
     },
-    typography: {
-        bodyM: {
-            fontFamily: base.typography.fontFamily,
-            fontWeight: base.typography.fontWeight.regular,
-            fontSize: base.typography.fontSize.bodyM,
-            lineHeight: base.typography.lineHeight.bodyM,
-        },
-        bodyMBold: {
-            fontFamily: base.typography.fontFamily,
-            fontWeight: base.typography.fontWeight.bold,
-            fontSize: base.typography.fontSize.bodyM,
-            lineHeight: base.typography.lineHeight.bodyM,
-        },
-        bodyS: {
-            fontFamily: base.typography.fontFamily,
-            fontWeight: base.typography.fontWeight.regular,
-            fontSize: base.typography.fontSize.bodyS,
-            lineHeight: base.typography.lineHeight.bodyS,
-        },
-        bodySBold: {
-            fontFamily: base.typography.fontFamily,
-            fontWeight: base.typography.fontWeight.bold,
-            fontSize: base.typography.fontSize.bodyS,
-            lineHeight: base.typography.lineHeight.bodyS,
-        },
-    },
-    size: {
-        sizeXXS: base.size.size150,
-        sizeXS: base.size.size200,
-        sizeS: base.size.size250,
-        sizeM: base.size.size300,
-        sizeL: base.size.size400,
-        sizeXL: base.size.size500,
-        sizeXXL: base.size.size600,
-    },
-    spacing: {
-        spacingNone: base.size.size0,
-        spacingXXS: base.size.size100,
-        spacingXS: base.size.size150,
-        spacingS: base.size.size200,
-        spacingM: base.size.size300,
-        spacingL: base.size.size400,
-        spacingXL: base.size.size600,
-        spacingXXL: base.size.size800,
-    },
-    borderRadius: {
-        borderRadiusNone: base.size.size0,
-        borderRadiusS: base.size.size50,
-        borderRadiusM: base.size.size100,
-        borderRadiusL: base.size.size150,
-        borderRadiusRounded: base.size.size12800,
-    },
+    typography: lightTheme.typography,
+    size: lightTheme.size,
+    spacing: lightTheme.spacing,
+    borderRadius: lightTheme.borderRadius,
 };

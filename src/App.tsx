@@ -22,7 +22,7 @@ function App() {
       <ThemeProvider theme={lightTheme}>
         <GlobalStyle />
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', justifyContent: 'left', padding: '3rem', backgroundColor: lightTheme.colors.background.pageFaded }}>
-          <Typography variant="bodyMBold" style={{ margin: '0rem' }}>React UI Kit</Typography>
+          <Typography variant="headingS" style={{ margin: '0rem' }}>React UI Kit</Typography>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', justifyContent: 'left' }}>
             <Typography variant="bodySBold" style={{ margin: '0rem' }}>Button variants</Typography>
             <ButtonGroup>

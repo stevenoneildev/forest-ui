@@ -12,6 +12,8 @@ import CheckboxContained from './components/Inputs/Checkbox/CheckboxContained';
 import RadioButton from './components/Inputs/RadioButton/RadioButton';
 import RadioButtonContained from './components/Inputs/RadioButton/RadioButtonContained';
 import TextField from './components/Inputs/TextField/TextField';
+import Tag from './components/Status/Tag/Tag';
+import SelectField from './components/Inputs/SelectField/SelectField';
 
 function App() {
 
@@ -96,7 +98,31 @@ function App() {
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', justifyContent: 'left' }}>
             <Typography variant="bodySBold" style={{ margin: '0rem' }}>Text field</Typography>
             <TextField hasLabel={true} label="Label" value="" onChange={() => {}} helperText="Helper text goes here" />
-          </div>                                      
+          </div>  
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', justifyContent: 'left' }}>
+            <Typography variant="bodySBold" style={{ margin: '0rem' }}>Select field</Typography>
+            <SelectField 
+              label="Label"
+              helperText="Helper text"
+              options={[{ value: '1', label: 'Option 1' }, { value: '2', label: 'Option 2' }, { value: '3', label: 'Option 3' }]} 
+              value="" 
+              onChange={() => {}} 
+            />
+          </div>               
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', justifyContent: 'left' }}>
+            <Typography variant="bodySBold" style={{ margin: '0rem' }}>Tag sizes</Typography>
+            <div style={{ display: 'flex', flexDirection: 'row', gap: '1rem', justifyContent: 'left' }}>
+              <Tag children="Tag" variant="medium" />
+              <Tag children="Tag" variant="small" />
+            </div>
+          </div>  
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', justifyContent: 'left' }}>
+            <Typography variant="bodySBold" style={{ margin: '0rem' }}>Tag colors</Typography>
+            <div style={{ display: 'flex', flexDirection: 'row', gap: '1rem', justifyContent: 'left' }}>
+              <Tag children="Tag" variant="medium" color='neutral'/>
+              <Tag children="Tag" variant="medium" color='accent'/>
+            </div>
+          </div>                                             
         </div>
       </ThemeProvider>
     </div>

@@ -1,6 +1,7 @@
 import type { Preview } from "@storybook/react";
+import { lightTheme, darkTheme } from "../src/tokens/theme";
 
-const preview: Preview = {
+export const preview: Preview = {
   parameters: {
     controls: {
       matchers: {
@@ -10,5 +11,3 @@ const preview: Preview = {
     },
   },
 };
-
-export default preview;

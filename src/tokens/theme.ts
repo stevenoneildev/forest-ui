@@ -15,6 +15,7 @@ export interface Theme {
         },
         background: {
             page: string;
+            pageFaded: string;
             primary: string;
             primaryHover: string;
             primaryActive: string;
@@ -116,6 +117,7 @@ export const lightTheme: Theme = {
         },
         background: {
             page: base.colors.grey0,
+            pageFaded: base.colors.grey50,
             primary: base.colors.grey1200,
             primaryHover: base.colors.grey1100,
             primaryActive: base.colors.grey1000,
@@ -217,6 +219,7 @@ export const darkTheme: Theme = {
         },
         background: {
             page: base.colors.grey1200,
+            pageFaded: base.colors.grey1100,
             primary: base.colors.grey50,
             primaryHover: base.colors.grey100,
             primaryActive: base.colors.grey200,

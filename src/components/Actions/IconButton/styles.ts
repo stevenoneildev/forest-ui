@@ -38,7 +38,7 @@ export const StyledIconButton = styled.button<{ buttonSize: string; buttonVarian
             case "large":
                 return theme.borderRadius.borderRadiusM;
             case "medium":
-                return theme.borderRadius.borderRadiusS;
+                return theme.borderRadius.borderRadiusM;
             case "small":
                 return theme.borderRadius.borderRadiusS;                                                 
             default:

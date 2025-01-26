@@ -136,7 +136,7 @@ export const lightTheme: Theme = {
     colors: {
         foreground: {
             primary: base.colors.grey1200,
-            primaryFaded: base.colors.grey600,
+            primaryFaded: base.colors.grey800,
             primaryDisabled: base.colors.grey400,
             onPrimary: base.colors.grey50,
             onPrimaryFaded: base.colors.grey400,
@@ -268,7 +268,7 @@ export const darkTheme: Theme = {
     colors: {
         foreground: {
             primary: base.colors.grey50,
-            primaryFaded: base.colors.grey400,
+            primaryFaded: base.colors.grey200,
             primaryDisabled: base.colors.grey600,
             onPrimary: base.colors.grey1200,
             onPrimaryFaded: base.colors.grey600,

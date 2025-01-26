@@ -108,5 +108,6 @@ export const StyledTypography = styled.p<{ variant: string, align: string }>`
             default:
                 return "left";
         }
-    }};              
+    }};
+    margin: 0;              
 `

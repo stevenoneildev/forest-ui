@@ -14,6 +14,7 @@ import RadioButtonContained from './components/Inputs/RadioButton/RadioButtonCon
 import TextField from './components/Inputs/TextField/TextField';
 import Tag from './components/Status/Tag/Tag';
 import SelectField from './components/Inputs/SelectField/SelectField';
+import TabGroup from './components/Navigation/Tabs/TabGroup';
 
 function App() {
 
@@ -21,7 +22,7 @@ function App() {
     <div className="App">
       <ThemeProvider theme={lightTheme}>
         <GlobalStyle />
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', justifyContent: 'left', padding: '3rem', backgroundColor: lightTheme.colors.background.pageFaded }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem', justifyContent: 'left', padding: '3rem', backgroundColor: lightTheme.colors.background.pageFaded }}>
           <Typography variant="headingS" style={{ margin: '0rem' }}>React UI Kit</Typography>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', justifyContent: 'left' }}>
             <Typography variant="bodySBold" style={{ margin: '0rem' }}>Button variants</Typography>
@@ -122,6 +123,25 @@ function App() {
               <Tag children="Tag" variant="medium" color='neutral'/>
               <Tag children="Tag" variant="medium" color='accent'/>
             </div>
+          </div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', justifyContent: 'left' }}>
+            <Typography variant="bodySBold" style={{ margin: '0rem' }}>Tabs</Typography>
+            <TabGroup
+              tabs={[
+                {
+                  label: 'Tab 1',
+                  content: <Typography variant="bodyM">Content for Tab 1</Typography>
+                },
+                {
+                  label: 'Tab 2',
+                  content: <Typography variant="bodyM">Content for Tab 2</Typography>
+                },
+                {
+                  label: 'Tab 3',
+                  content: <Typography variant="bodyM">Content for Tab 3</Typography>
+                }
+              ]}
+            />
           </div>                                             
         </div>
       </ThemeProvider>

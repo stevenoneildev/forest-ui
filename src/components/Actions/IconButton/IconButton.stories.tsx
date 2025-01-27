@@ -43,9 +43,25 @@ export default {
 
 const Template: StoryFn<IconButtonProps> = (args) => <IconButton {...args} />;
 
-export const Default = Template.bind({});
-Default.args = {
+export const Primary = Template.bind({});
+Primary.args = {
   buttonVariant: 'primary',
+  iconName: 'plus',
+  buttonSize: 'large',
+  disabled: false,
+};
+
+export const Secondary = Template.bind({});
+Secondary.args = {
+  buttonVariant: 'secondary',
+  iconName: 'plus',
+  buttonSize: 'large',
+  disabled: false,
+};
+
+export const Tertiary = Template.bind({});
+Tertiary.args = {
+  buttonVariant: 'tertiary',
   iconName: 'plus',
   buttonSize: 'large',
   disabled: false,

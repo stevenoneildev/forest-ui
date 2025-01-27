@@ -37,9 +37,16 @@ export default {
 
 const Template: StoryFn<TagProps> = (args) => <Tag {...args} />;
 
-export const Default = Template.bind({});
-Default.args = {
+export const Neutral = Template.bind({});
+Neutral.args = {
   variant: 'medium',
   color: 'neutral',
+  children: 'Label'
+};
+
+export const Accent = Template.bind({});
+Accent.args = {
+  variant: 'medium',
+  color: 'accent',
   children: 'Label'
 };

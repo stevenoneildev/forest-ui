@@ -37,10 +37,18 @@ export default {
 
 const Template: StoryFn<LinkButtonProps> = (args) => <LinkButton {...args} />;
 
-export const Default = Template.bind({});
-Default.args = {
+export const Accent = Template.bind({});
+Accent.args = {
     buttonSize: "medium",
     buttonVariant: "accent",
+    children: "Link button",
+    onClick: () => console.log("Link button clicked"),
+};
+
+export const Primary = Template.bind({});
+Primary.args = {
+    buttonSize: "medium",
+    buttonVariant: "primary",
     children: "Link button",
     onClick: () => console.log("Link button clicked"),
 };

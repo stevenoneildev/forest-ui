@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyledTypography } from "./styles";
 
-interface TypographyProps {
+export interface TypographyProps {
     children: React.ReactNode;
     variant?: string;
     color?: string;

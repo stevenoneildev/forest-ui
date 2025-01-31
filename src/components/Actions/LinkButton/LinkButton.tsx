@@ -5,18 +5,27 @@ export interface LinkButtonProps {
     buttonVariant: "accent" | "primary";
     children: React.ReactNode;
     onClick: () => void;
+    href?: string;
 }
 
 const LinkButton: React.FC<LinkButtonProps> = ({
     buttonSize,
     buttonVariant,
     children,
-    onClick
+    onClick,
+    href
 }) => {
     return (
-        <StyledLinkButton buttonSize={buttonSize} buttonVariant={buttonVariant} onClick={onClick}>
+        <StyledLinkButton 
+            as="a"
+            buttonSize={buttonSize} 
+            buttonVariant={buttonVariant} 
+            onClick={onClick} 
+            href={href}
+        >
             {children}
-        </StyledLinkButton>);
+        </StyledLinkButton>
+    );
 }
 
 export default LinkButton;

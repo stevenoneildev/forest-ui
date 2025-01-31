@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import { ThemeProvider } from 'styled-components';
 import { lightTheme } from './tokens/theme';
@@ -15,8 +15,11 @@ import TextField from './components/Inputs/TextField/TextField';
 import Tag from './components/Status/Tag/Tag';
 import SelectField from './components/Inputs/SelectField/SelectField';
 import TabGroup from './components/Navigation/Tabs/TabGroup';
+import Modal from './components/Layout/Modal/Modal';
 
 function App() {
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <div className="App">
@@ -143,6 +146,13 @@ function App() {
               ]}
             />
           </div>                                             
+          <Button onClick={() => setIsModalOpen(true)} style={{ alignSelf: 'flex-start' }}>Open modal</Button>
+          <Modal
+            isOpen={isModalOpen}
+            onClose={() => setIsModalOpen(false)}
+            heading="Heading goes here"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          />
         </div>
       </ThemeProvider>
     </div>

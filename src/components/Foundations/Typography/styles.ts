@@ -109,5 +109,6 @@ export const StyledTypography = styled.p<{ variant: string, align: string }>`
                 return "left";
         }
     }};
+    color: ${({ theme, color }) => color || theme.colors.foreground.primary};
     margin: 0;              
 `

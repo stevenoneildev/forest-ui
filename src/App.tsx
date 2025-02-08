@@ -16,6 +16,7 @@ import Tag from './components/Status/Tag/Tag';
 import SelectField from './components/Inputs/SelectField/SelectField';
 import TabGroup from './components/Navigation/Tabs/TabGroup';
 import Modal from './components/Layout/Modal/Modal';
+import SplitButton from './components/Actions/SplitButton/SplitButton';
 
 function App() {
 
@@ -153,6 +154,22 @@ function App() {
             heading="Heading goes here"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
           />
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', justifyContent: 'left' }}>
+            <Typography variant="bodySBold" style={{ margin: '0rem' }}>Split button variants</Typography>
+            <div style={{ display: 'flex', flexDirection: 'row', gap: '1rem', justifyContent: 'left' }}>
+              <SplitButton onClick={() => {}} variant="primary" size="medium" children="Button" />
+              <SplitButton onClick={() => {}} variant="secondary" size="medium" children="Button" />
+              <SplitButton onClick={() => {}} variant="tertiary" size="medium" children="Button" />
+            </div>
+          </div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', justifyContent: 'left' }}>
+            <Typography variant="bodySBold" style={{ margin: '0rem' }}>Split button sizes</Typography>
+            <div style={{ display: 'flex', flexDirection: 'row', gap: '1rem', justifyContent: 'left' }}>
+              <SplitButton onClick={() => {}} variant="secondary" size="large" children="Button" />
+              <SplitButton onClick={() => {}} variant="secondary" size="medium" children="Button" />
+              <SplitButton onClick={() => {}} variant="secondary" size="small" children="Button" />
+            </div>
+          </div>
         </div>
       </ThemeProvider>
     </div>

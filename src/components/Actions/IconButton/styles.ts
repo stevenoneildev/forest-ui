@@ -12,25 +12,25 @@ export const StyledIconButton = styled.button<{ buttonSize: string; buttonVarian
     height: ${({ theme, buttonSize }) => {
         switch (buttonSize) {
             case "large":
-                return theme.size.sizeXL;
+                return theme.size.sizeXXL;
             case "medium":
-                return theme.size.sizeL;
-            case "small":
-                return theme.size.sizeM;
-            default:
                 return theme.size.sizeXL;
+            case "small":
+                return theme.size.sizeL;
+            default:
+                return theme.size.sizeXXL;
         }
     }};
     width: ${({ theme, buttonSize }) => {
         switch (buttonSize) {
             case "large":
-                return theme.size.sizeXL;
+                return theme.size.sizeXXL;
             case "medium":
-                return theme.size.sizeL;
-            case "small":
-                return theme.size.sizeM;
-            default:
                 return theme.size.sizeXL;
+            case "small":
+                return theme.size.sizeL;
+            default:
+                return theme.size.sizeXXL;
         }
     }};
     border-radius: ${({ theme, buttonSize }) => {
@@ -40,7 +40,7 @@ export const StyledIconButton = styled.button<{ buttonSize: string; buttonVarian
             case "medium":
                 return theme.borderRadius.borderRadiusM;
             case "small":
-                return theme.borderRadius.borderRadiusS;                                                 
+                return theme.borderRadius.borderRadiusM;                                                 
             default:
                 return theme.borderRadius.borderRadiusM;
         }

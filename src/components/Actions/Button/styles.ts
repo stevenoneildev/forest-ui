@@ -8,9 +8,9 @@ export const StyledButton = styled.button<{ variant: string; size: string }>`
             case "medium":
                 return theme.typography.bodyMBold.fontFamily;
             case "large":
-                return theme.typography.bodyMBold.fontFamily;;
+                return theme.typography.bodyLBold.fontFamily;;
             default:
-                return theme.typography.bodyMBold.fontFamily;;
+                return theme.typography.bodyLBold.fontFamily;;
         }
     }};
     font-size: ${({ theme, size }) => {
@@ -20,9 +20,9 @@ export const StyledButton = styled.button<{ variant: string; size: string }>`
             case "medium":
                 return theme.typography.bodyMBold.fontSize;
             case "large":
-                return theme.typography.bodyMBold.fontSize;;
+                return theme.typography.bodyLBold.fontSize;;
             default:
-                return theme.typography.bodyMBold.fontSize;;
+                return theme.typography.bodyLBold.fontSize;;
         }
     }};
     font-weight: ${({ theme, size }) => {
@@ -32,9 +32,9 @@ export const StyledButton = styled.button<{ variant: string; size: string }>`
             case "medium":
                 return theme.typography.bodyMBold.fontWeight;
             case "large":
-                return theme.typography.bodyMBold.fontWeight;;
+                return theme.typography.bodyLBold.fontWeight;;
             default:
-                return theme.typography.bodyMBold.fontWeight;;
+                return theme.typography.bodyLBold.fontWeight;;
         }
     }};
     line-height: ${({ theme, size }) => {
@@ -44,9 +44,9 @@ export const StyledButton = styled.button<{ variant: string; size: string }>`
             case "medium":
                 return theme.typography.bodyMBold.lineHeight;
             case "large":
-                return theme.typography.bodyMBold.lineHeight;
+                return theme.typography.bodyLBold.lineHeight;
             default:
-                return theme.typography.bodyMBold.lineHeight;
+                return theme.typography.bodyLBold.lineHeight;
         }
     }};    
     background-color: ${({ theme, variant }) => {
@@ -76,7 +76,7 @@ export const StyledButton = styled.button<{ variant: string; size: string }>`
     padding-left: ${({ theme, size }) => {
         switch (size) {
             case "small":
-                return theme.spacing.spacingXXS;
+                return theme.spacing.spacingXS;
             case "medium":
                 return theme.spacing.spacingXS;
             case "large":
@@ -88,7 +88,7 @@ export const StyledButton = styled.button<{ variant: string; size: string }>`
     padding-right: ${({ theme, size }) => {
         switch (size) {
             case "small":
-                return theme.spacing.spacingXXS;
+                return theme.spacing.spacingXS;
             case "medium":
                 return theme.spacing.spacingXS;
             case "large":
@@ -124,7 +124,7 @@ export const StyledButton = styled.button<{ variant: string; size: string }>`
     border-radius: ${({ theme, size }) => {
         switch (size) {
             case "small":
-                return theme.borderRadius.borderRadiusS;
+                return theme.borderRadius.borderRadiusM;
             case "medium":
                 return theme.borderRadius.borderRadiusM;
             case "large":

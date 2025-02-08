@@ -79,6 +79,18 @@ export interface Theme {
             fontSize: string;
             lineHeight: string;
         },
+        bodyL: {
+            fontFamily: string;
+            fontWeight: number;
+            fontSize: string;
+            lineHeight: string;
+        },
+        bodyLBold: {
+            fontFamily: string;
+            fontWeight: number;
+            fontSize: string;
+            lineHeight: string;
+        },
         bodyM: {
             fontFamily: string;
             fontWeight: number;
@@ -210,6 +222,18 @@ export const lightTheme: Theme = {
             fontWeight: base.typography.fontWeight.bold,
             fontSize: base.typography.fontSize.headingXL,
             lineHeight: base.typography.lineHeight.headingXL,
+        },
+        bodyL: {
+            fontFamily: base.typography.fontFamily,
+            fontWeight: base.typography.fontWeight.regular,
+            fontSize: base.typography.fontSize.bodyL,
+            lineHeight: base.typography.lineHeight.bodyL,
+        },
+        bodyLBold: {
+            fontFamily: base.typography.fontFamily,
+            fontWeight: base.typography.fontWeight.bold,
+            fontSize: base.typography.fontSize.bodyL,
+            lineHeight: base.typography.lineHeight.bodyL,
         },
         bodyM: {
             fontFamily: base.typography.fontFamily,

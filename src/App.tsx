@@ -21,6 +21,10 @@ import SplitButton from './components/Actions/SplitButton/SplitButton';
 function App() {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [textField1, setTextField1] = useState('');
+  const [textField2, setTextField2] = useState('');
+  const [textField3, setTextField3] = useState('');
+  
 
   return (
     <div className="App">
@@ -102,7 +106,31 @@ function App() {
           </div>  
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', justifyContent: 'left' }}>
             <Typography variant="bodySBold" style={{ margin: '0rem' }}>Text field</Typography>
-            <TextField hasLabel={true} label="Label" value="" onChange={() => {}} helperText="Helper text goes here" />
+            <TextField 
+              hasLabel={true} 
+              label="Label" 
+              value={textField1} 
+              onChange={(e) => setTextField1(e.target.value)} 
+              helperText="Helper text goes here" 
+            />
+            <TextField 
+              hasLabel={true} 
+              label="Label" 
+              value={textField2} 
+              onChange={(e) => setTextField2(e.target.value)} 
+              helperText="Helper text goes here" 
+              hasLeadingIcon={true} 
+              leadingIcon="moon" 
+            />
+            <TextField 
+              hasLabel={true} 
+              label="Label" 
+              value={textField3} 
+              onChange={(e) => setTextField3(e.target.value)} 
+              helperText="Helper text goes here" 
+              hasTrailingIcon={true} 
+              trailingIcon="moon" 
+            />
           </div>  
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', justifyContent: 'left' }}>
             <Typography variant="bodySBold" style={{ margin: '0rem' }}>Select field</Typography>
